@@ -3,7 +3,7 @@
   "pipeline_stage": "validated",
   "title": "Delayed Auditory Feedback EEG/EGG",
   "description": "This dataset comprises electroencephalography (EEG), electroglottography (EGG), and audio recordings collected during a delayed auditory feedback experiment. Participants performed speech tasks while receiving real-time auditory feedback of their own speech with experimentally controlled delays. The dataset includes minimally preprocessed EGG data with hardware filter phase delay corrections and synchronized audio recordings representing the delayed feedback heard by subjects.",
-  "methods_description": "EEG, EGG, and audio signals were acquired simultaneously using the same hardware for analog-to-digital conversion. EGG data underwent minimal preprocessing to correct for phase delays induced by the amplifier's built-in hardware filter using reverse-direction software filtering. Data were organized according to the BIDS standard for EEG using MNE-BIDS software.",
+  "methods_description": "EEG, EGG, and audio data were acquired simultaneously using the same hardware for analog-to-digital conversion. EGG underwent minimal preprocessing to correct for phase delays induced by the amplifier's built-in hardware filter using reverse-direction software filtering. Data were organized according to the BIDS standard for EEG using MNE-BIDS software.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -26,10 +26,7 @@
       "term": "speech production"
     },
     {
-      "term": "auditory feedback"
-    },
-    {
-      "term": "electrophysiology"
+      "term": "voice control"
     }
   ],
   "related_identifiers": [
