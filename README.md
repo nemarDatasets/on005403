@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on005403-blue)](https://doi.org/10.82901/nemar.on005403)
+
 Notes
 ----------
 Electroglottography (EGG) and audio are included in the EEG files themselves, rather than in sidecar files, as they were converted from analog to digital on the same hardware. The audio is the audio the subject heard, i.e. their delayed auditory feedback. If you want the speech waveform aligned to the time the subject produced it, you can shift the audio back by the timestamps recorded (for each trial) in the delay field of the events sidecar file. 
