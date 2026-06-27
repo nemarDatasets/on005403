@@ -1,35 +1,88 @@
 {
   "version": "2.0",
-  "dataset_id": "on005403",
-  "source": "openneuro",
-  "source_id": "ds005403",
+  "pipeline_stage": "validated",
   "title": "Delayed Auditory Feedback EEG/EGG",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Veillette, J.": {},
     "Rosen, J.": {},
     "Margoliash, D.": {},
     "Nusbaum, H.": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005403.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005403",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005403",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.6.0",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
-      "funder_name": "NSF 1835181"
+      "funder_name": "NSF",
+      "award_number": "1835181"
     }
-  ]
+  ],
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".gz",
+    ".html",
+    ".json",
+    ".md",
+    ".npy",
+    ".tsv",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "This dataset comprises electroencephalography (EEG) recordings with concurrent electroglottography (EGG) and audio from subjects performing speech tasks under delayed auditory feedback conditions. The study investigates the neural and laryngeal responses to altered auditory feedback during speech production. Data were organized according to the Brain Imaging Data Structure (BIDS) standard for electrophysiological recordings.",
+  "methods_description": "EEG and EGG signals were recorded simultaneously and digitized on the same hardware. EGG data underwent minimal preprocessing to correct for phase delays introduced by the amplifier's built-in hardware filter using a reverse-direction software filter. Audio recordings represent the delayed auditory feedback presented to subjects, with trial-specific delay timestamps provided in the events sidecar files.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "electroglottography"
+    },
+    {
+      "term": "delayed auditory feedback"
+    },
+    {
+      "term": "speech production"
+    },
+    {
+      "term": "auditory feedback"
+    },
+    {
+      "term": "laryngeal activity"
+    }
+  ],
+  "source_hash": "8ae17bc568ebfb89ce25c3894248596a6945527db64491391c32d7317b292ea3"
 }
