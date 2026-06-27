@@ -1,0 +1,35 @@
+{
+  "version": "2.0",
+  "dataset_id": "on005403",
+  "source": "openneuro",
+  "source_id": "ds005403",
+  "title": "Delayed Auditory Feedback EEG/EGG",
+  "authors": {
+    "Veillette, J.": {},
+    "Rosen, J.": {},
+    "Margoliash, D.": {},
+    "Nusbaum, H.": {}
+  },
+  "license": "CC0",
+  "dataset_type": "raw",
+  "related_identifiers": [
+    {
+      "identifier": "10.18112/openneuro.ds005403.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsIdenticalTo"
+    }
+  ],
+  "pipeline_stage": "seeded",
+  "bids_version": "1.6.0",
+  "recording_modality": [
+    "eeg"
+  ],
+  "datatypes": [
+    "eeg"
+  ],
+  "funding_references": [
+    {
+      "funder_name": "NSF 1835181"
+    }
+  ]
+}
