@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Delayed Auditory Feedback EEG/EGG",
-  "description": "This dataset comprises electroencephalography (EEG), electroglottography (EGG), and audio recordings collected during a delayed auditory feedback experiment. Participants performed speech tasks while receiving real-time auditory feedback of their own speech with experimentally controlled delays. The dataset includes minimally preprocessed EGG data with hardware filter phase delay corrections and synchronized audio recordings representing the delayed feedback heard by subjects.",
-  "methods_description": "EEG, EGG, and audio data were acquired simultaneously using the same hardware for analog-to-digital conversion. EGG underwent minimal preprocessing to correct for phase delays induced by the amplifier's built-in hardware filter using reverse-direction software filtering. Data were organized according to the BIDS standard for EEG using MNE-BIDS software.",
+  "description": "This dataset contains EEG, electroglottography (EGG), and audio recordings from participants exposed to delayed auditory feedback (DAF) during speech production. The data were collected to investigate the neural and vocal responses to auditory feedback delays, capturing both brain activity and vocal fold vibration patterns synchronized with speech and altered auditory feedback timing.",
+  "methods_description": "EGG and audio signals were recorded on the same hardware as the EEG data and are embedded within the EEG files rather than as separate sidecar files. EGG data were minimally preprocessed to correct for phase delays introduced by the amplifier's built-in hardware filter, using a zero-phase-shift software filter. Data were organized according to the BIDS standard using the MNE-BIDS software.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -23,10 +23,16 @@
       "term": "delayed auditory feedback"
     },
     {
-      "term": "speech production"
+      "term": "Speech Production Measurement",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D013068"
     },
     {
-      "term": "voice control"
+      "term": "auditory feedback"
+    },
+    {
+      "term": "BIDS"
     }
   ],
   "related_identifiers": [
@@ -36,24 +42,24 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005403",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.21105/joss.01896",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "10.1038/s41597-019-0104-8",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "10.18112/openneuro.ds005403.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005403",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
