@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Delayed Auditory Feedback EEG/EGG",
-  "description": "This dataset contains EEG, electroglottography (EGG), and audio recordings from participants exposed to delayed auditory feedback (DAF) during speech production. The data were collected to investigate the neural and vocal responses to auditory feedback delays, capturing both brain activity and vocal fold vibration patterns synchronized with speech and altered auditory feedback timing.",
-  "methods_description": "EGG and audio signals were recorded on the same hardware as the EEG data and are embedded within the EEG files rather than as separate sidecar files. EGG data were minimally preprocessed to correct for phase delays introduced by the amplifier's built-in hardware filter, using a zero-phase-shift software filter. Data were organized according to the BIDS standard using the MNE-BIDS software.",
+  "description": "This dataset contains simultaneous electroencephalography (EEG) and electroglottography (EGG) recordings with audio collected during speech production under delayed auditory feedback. The audio channel holds the delayed feedback heard by the participant, and the EGG signal was minimally preprocessed to correct phase delays introduced by the amplifier hardware filter. Per-trial delay values in the events sidecar allow the speech waveform to be realigned to the time of production.",
+  "methods_description": "EEG, EGG, and audio were digitized on the same hardware and stored together in the EEG files. EGG was minimally preprocessed by applying a software filter in the opposite temporal direction to correct phase delays from the amplifier's built-in hardware filter. Data were organized to the EEG-BIDS standard using MNE-BIDS.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -23,16 +23,12 @@
       "term": "delayed auditory feedback"
     },
     {
-      "term": "Speech Production Measurement",
+      "term": "speech production"
+    },
+    {
+      "term": "Electroencephalography",
       "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D013068"
-    },
-    {
-      "term": "auditory feedback"
-    },
-    {
-      "term": "BIDS"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     }
   ],
   "related_identifiers": [
@@ -74,7 +70,7 @@
     "eeg"
   ],
   "sizes": [
-    "145.7 GB (551 files)"
+    "136 GB (551 files)"
   ],
   "formats": [
     ".eeg",
